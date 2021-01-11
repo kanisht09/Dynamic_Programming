@@ -15,7 +15,6 @@ ll wt[25];
 ll n, W;
 int dp[25][20005];
 
-
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -56,13 +55,7 @@ int main()
             }
         }
     }
-    ll mini = INF;
-    for (ll i = 0; i <= W; i++)
-    {
-        if (dp[n][i])
-            mini = min(mini, abs(sum - 2 * i));
-    }
-    cout << mini << "\n";
+    cout<<dp[n][W]<<"\n";
 
 
 
